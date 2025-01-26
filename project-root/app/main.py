@@ -1,10 +1,3 @@
-from app.core.database import Base, engine
-from app.api.v1.products import router as products_router
-from fastapi import FastAPI, Depends
-from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
-from sqlalchemy.orm import sessionmaker
-from app.core.database import Base, engine, get_db
-from app.api.v1.products import router as products_router
 from fastapi import FastAPI
 import asyncio
 from app.bot.bot import start_bot  # Импортируем функцию для старта бота
